@@ -1,20 +1,196 @@
-<!doctype html>
-
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPO Lunches - Innovators who eat</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #ffffff;
+            color: #444; /* Updated to dark gray */
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #444; /* Updated to dark gray */
+        }
+        header p {
+            font-size: 1.1em;
+            margin-top: 20px;
+            color: #666;
+        }
+        .sketch-art {
+            background: #f8f8f8;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .main-content, .about {
+            padding: 40px 0;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #444; /* Updated to dark gray */
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+        .cta, .rules {
+            background: #f8f8f8;
+            padding: 40px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            color: #ffffff;
+            background: #e8491d;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background: #d13d15;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .card {
+            flex-basis: 100%;
+            background: #f8f8f8;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .rules ol {
+            padding-left: 20px;
+            text-align: left;
+        }
+        footer {
+            background: #f8f8f8;
+            color: #666;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
 
-  <title>CPO Lunches</title>
-  <!-- <link rel="icon" href="https://emoji.slack-edge.com/T04T4TH8W/among_us_orange_dance/4939349f146021e2.gif"> -->
-
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            .card {
+                flex-basis: calc(50% - 15px);
+            }
+        }
+        @media (min-width: 1024px) {
+            .card {
+                flex-basis: calc(33.333% - 20px);
+            }
+        }
+    </style>
 </head>
-
 <body>
-   CPO Lunches<br><br>Product folks who eat<br>Join our network of product leaders to get trusted advice <br>and connections.<br><br>We're just getting started but you can <a href="https://forms.gle/9ZpYwCbVhUMagksk7">apply here.</a><br><br>
-Membership is free, and you can join local lunches <br>and a larger group of product leaders on a listserv.
-<a href="mailto:kendall@ctolunches.com">Email if you have questions</a>
-<br><br>
-  as a product leader<br>
-  i want lunch<br>
-  so that i can stop eating alone<br>
+    <header>
+        <div class="container">
+            <h1>Innovators who eat</h1>
+            <p>Join our network of product leaders to get trusted advice and create connections.</p>
+        </div>
+    </header>
+
+    <section class="sketch-art">
+        <div class="container">
+            <img src="/api/placeholder/800/400" alt="Sketch art representing community, thinking, and eating" />
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="main-content">
+            <h2>Welcome to CPO Lunches</h2>
+            <p>CPO Lunches is a community for Chief Product Officers to connect, share insights, and discuss the latest trends in product management.</p>
+            <p>Our informal lunch meetings provide a platform for CPOs to network with peers, exchange ideas, and explore innovative strategies in a relaxed setting.</p>
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>CPO Lunches is proudly part of the CTO Lunches family. We bring the successful model of peer connection and knowledge sharing to the world of product leadership. Our mission is to foster a community where Chief Product Officers can learn from each other, discuss challenges, and grow together in a confidential and supportive environment.</p>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Have Lunch & Connect</h3>
+                <p><strong>Free Forever</strong></p>
+                <p>Our community hosts lunches in major cities worldwide, and our private email community is an easy way to reach out for advice from fellow product leaders and get thoughtful responses.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD_0MYMEQUPSH7DRvTs4d5urQMS2I8yKmZc75kEZ3bo2cdWA/viewform" class="button">Join</a>
+            </div>
+            <div class="card">
+                <h3>Exclusive Community</h3>
+                <p><strong>$99/month (30 day free trial)</strong></p>
+                <p>The "back room" small group of CPO Lunches.</p>
+                <ul>
+                    <li>Networking</li>
+                    <li>Advice</li>
+                    <li>Ad-Hoc Conversation/Feedback</li>
+                    <li>A Safe Space to Vent with Peers</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Sponsor</h3>
+                <p><strong>$4,000 for one lunch or $10,000 for three</strong></p>
+                <p>Executive meals are hard to arrange on your own— getting in front of your audience is easy with CPO Lunches.</p>
+                <ul>
+                    <li>Join a lunch and give a brief pitch</li>
+                    <li>Personal connection face to face</li>
+                </ul>
+                <p>Get in touch and find out why we have many repeat sponsors.</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Join Our Next Lunch</h2>
+            <p>Don't miss out on our upcoming CPO lunch event. Connect with fellow product leaders and gain valuable insights.</p>
+            <a href="#" class="button">Register Now</a>
+        </section>
+
+        <section class="rules">
+            <h2>The Rules</h2>
+            <ol>
+                <li>No non-product people. This keeps the conversation real.</li>
+                <li>No recruiters, consultants, vendors or agencies. These folks are important,  but their presence changes the dynamic.</li>
+                <li>Participants must have product leader level responsibility: CPO, VP/SVP Product, Director or equivalent.</li>
+                <li>No talking about the lunch outside of the lunch.</li>
+                <li>No photos or social media.</li>
+                <li>All conversations at the lunches and in the CPO Lunches community are strictly off the record.</li>
+                <li>Unsubscribe at any time.</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CPO Lunches. All rights reserved.</p>
+    </footer>
 </body>
 </html>

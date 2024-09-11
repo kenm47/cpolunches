@@ -6,13 +6,14 @@
     <style>
         /* Base styles */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
             background-color: #ffffff;
             color: #333;
         }
+
         .container {
             width: 90%;
             max-width: 1200px;
@@ -20,66 +21,74 @@
             overflow: hidden;
             padding: 20px;
         }
+
         header {
             background: #ffffff;
-            color: #444; /* Updated to dark gray */
+            color: #444;
             padding: 40px 0;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
             font-weight: bold;
-            color: #444; /* Updated to dark gray */
+            color: #444;
         }
+
         header p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             margin-top: 20px;
             color: #666;
         }
-        .sketch-art {
-            background: #f8f8f8;
-            padding: 60px 0;
-            text-align: center;
-        }
+
         .main-content, .about {
-            padding: 40px 0;
+            padding: 50px 0;
         }
+
         h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #444; /* Updated to dark gray */
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            color: #444;
         }
+
         p {
-            margin-bottom: 20px;
-            font-size: 1em;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+            line-height: 1.7;
         }
+
         .cta, .rules {
             background: #f8f8f8;
-            padding: 40px;
+            padding: 50px;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px;
             border-radius: 5px;
         }
+
         .button {
             display: inline-block;
             color: #ffffff;
             background: #e8491d;
-            padding: 12px 24px;
+            padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 1em;
-            margin-top: 15px;
+            font-size: 1.2em;
+            margin-top: 20px;
             transition: background-color 0.3s ease;
         }
+
         .button:hover {
             background: #d13d15;
-              .cards {
+        }
+
+        .cards {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 30px;
         }
+
         .card {
             flex-basis: 100%;
             background: #f8f8f8;
@@ -88,18 +97,60 @@
             border-radius: 5px;
         }
 
-        /* Updated Responsive styles */
+        /* Responsive Styles */
         @media (min-width: 768px) {
             .card {
                 flex-basis: calc(50% - 15px);
             }
+
+            header h1 {
+                font-size: 3.2em;
+            }
+
+            header p {
+                font-size: 1.3em;
+            }
+
+            h2 {
+                font-size: 2.4em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
         }
+
         @media (min-width: 1024px) {
             .card {
                 flex-basis: calc(33.333% - 20px);
                 max-width: calc(33.333% - 20px); /* Added max-width */
             }
+
+            header h1 {
+                font-size: 3.5em;
+            }
+
+            header p {
+                font-size: 1.4em;
+            }
+
+            h2 {
+                font-size: 2.6em;
+            }
+
+            p {
+                font-size: 1.3em;
+            }
         }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #666;
+        }
+
     </style>
 </head>
 <body>
@@ -148,7 +199,7 @@
         <section class="cta">
             <h2>Join Our Next Lunch</h2>
             <p>Don't miss out on our upcoming CPO lunch event. Connect with fellow product leaders and gain valuable insights.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD_" class="button">Apply Now</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD_0MYMEQUPSH7DRvTs4d5urQMS2I8yKmZc75kEZ3bo2cdWA/viewform" class="button">Apply Now</a>
         </section>
 
         <section class="rules">
@@ -173,7 +224,7 @@
                     <li>Join a lunch and give a brief pitch</li>
                     <li>Personal connection face to face</li>
                 </ul>
-                <p>Get in touch and find out why we have many repeat sponsors.</p>
+                <p>If you're interested in sponsoring a lunch, <a href="mailto:kendall@ctolunches.com">get in touch</a>.</p>
             </div>
         </section>
     </div>
@@ -181,5 +232,6 @@
     <footer>
         <p>&copy; 2024 CPO Lunches. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

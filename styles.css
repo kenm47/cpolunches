@@ -1,5 +1,5 @@
-/* Base Styles */
-body {
+ /* Base Styles */
+ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.8;
     margin: 0;
@@ -24,13 +24,168 @@ header {
     text-align: center;
 }
 
-// ... rest of the CSS ...
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+header img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Main content and About Section */
+section {
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Card Styles */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    flex-basis: 100%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #e8491d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: #d13d15;
+    box-shadow: 0 8px 16px rgba(232, 73, 29, 0.4);
+}
+
+/* CTA and Rules Section */
+.cta, .rules {
+    background: #f1f1f1;
+    border-radius: 12px;
+    padding: 60px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.cta h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+}
+
+.rules ol {
+    list-style: none;
+    padding: 0;
+}
+
+.rules ol li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
 
 /* Responsive Media Queries */
 @media (min-width: 768px) {
-    // ... existing media query styles ...
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 2.8em;
+    }
 }
 
 @media (min-width: 1024px) {
-    // ... existing media query styles ...
+    .card {
+        flex-basis: calc(33.333% - 20px);
+    }
+
+    header h1 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
 }
